@@ -1,0 +1,257 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span,
+h1, h2, h3, h4, h5, h6, p,
+a,
+img,
+ol, ul, li,
+fieldset, form, label, legend,
+table, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Karla",Arial, Helvetica, sans-serif;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+ol, ul {
+  list-style: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  text-transform: uppercase; }
+
+body {
+  background-image: url("../images//background.png"); }
+
+.container-fluid {
+  padding: 0; }
+
+.my-container {
+  max-width: 976px;
+  margin: 0 auto; }
+
+button#scroll-top {
+  position: fixed;
+  z-index: 99;
+  bottom: 1rem;
+  right: 5rem;
+  width: 2rem;
+  height: 2rem;
+  background: #8eb63e;
+  border: none;
+  cursor: pointer;
+  border-radius: 50%;
+  color: #ffffff;
+  opacity: 0.5; }
+  button#scroll-top .fa-arrow-up {
+    font-size: 1rem; }
+  button#scroll-top:hover {
+    opacity: 1; }
+  button#scroll-top:focus {
+    outline: none; }
+
+.navbar-brand {
+  margin-right: 0; }
+  .navbar-brand .logo {
+    max-width: 100%; }
+
+.nav-item {
+  margin-left: 1.5rem; }
+
+.text__highlight {
+  color: #8eb63e; }
+
+/* Start Content */
+.content .welcome {
+  font-size: 2rem;
+  margin: 1.75rem 0 4rem; }
+.content .title {
+  position: relative;
+  margin: 3rem 0;
+  border-top: 1px dashed #dcd3d3; }
+  .content .title h4 {
+    position: absolute;
+    top: -1.1rem;
+    left: 1rem;
+    padding: 0 0.5rem;
+    background: url(../../images/background.png); }
+  .content .title span {
+    font-size: 1.25rem; }
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; }
+  .services .item-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 0 1 100%; }
+    .services .item-col .service-icon-wrapper__out {
+      width: 9rem;
+      height: 9rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid #e1e1e1;
+      border-radius: 50%;
+      background-color: #ffffff; }
+      .services .item-col .service-icon-wrapper__out .service-icon-wrapper__in {
+        background-color: #8eb63e;
+        border-radius: 50%;
+        padding: 1em;
+        line-height: 1; }
+
+.portfolio .portfolio-item {
+  display: flex;
+  background-color: #ffffff;
+  margin-bottom: 0.5rem; }
+  .portfolio .portfolio-item .item-image {
+    line-height: 0; }
+  .portfolio .portfolio-item .item-name {
+    font-size: 0.8rem; }
+  .portfolio .portfolio-item .item-content {
+    padding: 0.5rem; }
+    .portfolio .portfolio-item .item-content .option-item {
+      line-height: 0;
+      margin: 0.5rem 0; }
+    .portfolio .portfolio-item .item-content .item-btn {
+      display: inline-block;
+      background-color: #8eb63e;
+      border: none;
+      color: #ffffff;
+      font-size: 0.7rem;
+      padding: 12px 8px;
+      text-transform: unset; }
+      .portfolio .portfolio-item .item-content .item-btn:hover {
+        cursor: pointer; }
+    .portfolio .portfolio-item .item-content .item-description {
+      font-size: 0.7rem; }
+
+/* End Content */
+/* Footer */
+.footer {
+  background-color: #ffffff;
+  padding: 1rem 0;
+  margin-top: 5rem; }
+  .footer .title {
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-bottom: 0.5rem; }
+  .footer .little-about-us {
+    margin-bottom: 1rem; }
+    .footer .little-about-us .description {
+      font-size: 0.7rem; }
+  .footer .follow-us .social-links li {
+    float: left; }
+    .footer .follow-us .social-links li .fab {
+      padding: 0 0.5rem 0 0;
+      color: #858585; }
+      .footer .follow-us .social-links li .fab:hover {
+        opacity: 0.5; }
+  .footer .list-archives li a {
+    display: block;
+    padding: 10px 0;
+    border-bottom: 1px dashed #acaba9;
+    color: #858585;
+    font-size: 0.65rem;
+    text-decoration: none; }
+    .footer .list-archives li a:hover {
+      opacity: 0.5; }
+  .footer .list-contact-us li {
+    padding: 0.5rem 0;
+    color: #858585; }
+    .footer .list-contact-us li i {
+      width: 1.5rem; }
+    .footer .list-contact-us li .text {
+      font-size: 0.65rem; }
+  .footer .form-subcribe input {
+    height: 3rem;
+    padding: 0 1rem;
+    border: none;
+    background: #fafafa;
+    font-size: 0.8rem;
+    margin-bottom: 0.5rem;
+    width: 100%; }
+    .footer .form-subcribe input:focus {
+      outline: none; }
+  .footer .form-subcribe .btn-subscribe {
+    float: right;
+    background-color: #8eb63e;
+    border: none;
+    color: #ffffff;
+    font-size: 0.7rem;
+    padding: 6px 8px;
+    text-transform: uppercase; }
+    .footer .form-subcribe .btn-subscribe:hover {
+      cursor: pointer; }
+
+/* End Footer */
+/* Copyright */
+.copy-right-wrapper {
+  background-color: #000000; }
+  .copy-right-wrapper .copy-right .lower-footer {
+    display: none; }
+    .copy-right-wrapper .copy-right .lower-footer li {
+      float: left; }
+      .copy-right-wrapper .copy-right .lower-footer li a {
+        color: #ffffff;
+        font-size: 0.65rem;
+        text-decoration: none;
+        padding: 0.5rem;
+        display: inline-block;
+        text-transform: uppercase; }
+  .copy-right-wrapper .copy-right .text-copy-right {
+    font-size: 0.65rem;
+    color: #ffffff; }
+
+/* End Copyright */
+@media (min-width: 576px) {
+  * {
+    font-size: 16px; }
+
+  .services .item-col {
+    flex: 0 1 50%; }
+
+  .copy-right-wrapper .copy-right .lower-footer {
+    display: block; } }
+@media (min-width: 768px) {
+  * {
+    font-size: 17px; }
+
+  .navbar-expand-md {
+    flex-flow: column wrap; }
+
+  .services .item-col {
+    flex: 0 1 9rem; } }
+@media (min-width: 992px) {
+  * {
+    font-size: 18px; }
+
+  .navbar-expand-md {
+    flex-flow: row wrap; }
+
+  .services .item-col {
+    flex: 0 1 9rem; } }
+@media (min-width: 1200px) {
+  * {
+    font-size: 20px; }
+
+  .navbar-expand-md {
+    flex-flow: row wrap; }
+
+  .services .item-col {
+    flex: 0 1 9rem; } }
+
+/*# sourceMappingURL=main.css.map */

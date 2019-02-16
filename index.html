@@ -20,9 +20,18 @@
       href="https://fonts.googleapis.com/css?family=Karla"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./styles/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+      integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./sass/main.css" />
   </head>
   <body>
+    <button id="scroll-top" onclick="onClickScroll()">
+      <i class="fas fa-arrow-up"></i>
+    </button>
     <!-- HEADER -->
     <div class="container">
       <nav class="navbar navbar-expand-md navbar-light">
@@ -55,10 +64,9 @@
         </div>
       </nav>
     </div>
+    <!-- END HEADER -->
 
-    <div class="container"></div>
-    <!-- HEADER -->
-    <!-- Slider -->
+    <!-- SLIDER -->
     <section class="container-fluid">
       <div
         id="carouselExampleControls"
@@ -108,9 +116,9 @@
         </a>
       </div>
     </section>
-    <!-- Slider -->
+    <!-- END SLIDER -->
 
-    <!-- Content -->
+    <!-- CONTENT -->
     <div class="content container">
       <h2 class="welcome text-center">
         WELCOME TO <span class="text__highlight">ELEGANTICA</span> - A MINIMAL
@@ -172,8 +180,10 @@
       </section>
       <section class="portfolio">
         <div class="title">
-          <span>Recent From</span>
-          <span class="text__highlight">portfolio</span>
+          <h4>
+            <span>Recent From</span>
+            <span class="text__highlight">portfolio</span>
+          </h4>
         </div>
         <div class="row list-portfolio">
           <div class="col-md-12 col-lg-6">
@@ -256,21 +266,132 @@
       </section>
       <section class="advertiser">
         <div class="title">
-          <span>Our Major</span>
-          <span class="text__highlight">advertisers</span>
+          <h4>
+            <span>Our Major</span>
+            <span class="text__highlight">advertisers</span>
+          </h4>
         </div>
-        <ul class="list-advertiser">
-          <li><img src="./images/advertiser1.png" alt="" /></li>
-          <li><img src="./images/advertiser1.png" alt="" /></li>
-          <li><img src="./images/advertiser1.png" alt="" /></li>
-          <li><img src="./images/advertiser1.png" alt="" /></li>
-          <li><img src="./images/advertiser1.png" alt="" /></li>
-          <li><img src="./images/advertiser1.png" alt="" /></li>
-          <li><img src="./images/advertiser1.png" alt="" /></li>
-        </ul>
+        <div class="row justify-content-center list-advertiser">
+          <div class="col-6 col-sm-4 col-md-4 col-lg-2">
+            <img src="./images/advertiser1.png" alt="" />
+          </div>
+          <div class="col-6 col-sm-4 col-md-4 col-lg-2">
+            <img src="./images/advertiser1.png" alt="" />
+          </div>
+          <div class="col-6 col-sm-4 col-md-4 col-lg-2">
+            <img src="./images/advertiser1.png" alt="" />
+          </div>
+          <div class="col-6 col-sm-4 col-md-4 col-lg-2">
+            <img src="./images/advertiser1.png" alt="" />
+          </div>
+          <div class="col-6 col-sm-4 col-md-4 col-lg-2">
+            <img src="./images/advertiser1.png" alt="" />
+          </div>
+          <div class="col-6 col-sm-4 col-md-4 col-lg-2">
+            <img src="./images/advertiser1.png" alt="" />
+          </div>
+        </div>
       </section>
     </div>
-    <!-- Content -->
+    <!-- END CONTENT -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-sm-6 col-md-3">
+            <div class="little-about-us">
+              <h3 class="title">LITTLE about US</h3>
+              <p class="description">
+                Sed posuere consectetur est at. Nulla vitae elit libero, a
+                pharetra. Lorem ipsum dolor sit amet, conse ctetuer adipiscing
+                elit.
+              </p>
+            </div>
+            <div class="follow-us">
+              <h3 class="title">FOLLOW us</h3>
+              <ul class="social-links clearfix">
+                <li>
+                  <a href=""><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fab fa-vimeo-v"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fab fa-google-plus-g"></i></a>
+                </li>
+                <li>
+                  <a href=""><i class="fab fa-reddit"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3">
+            <h3 class="title">
+              ARCHIVES
+            </h3>
+            <ul class="list-archives">
+              <li><a href="">February 2012</a></li>
+              <li><a href="">January 2012</a></li>
+              <li><a href="">March 2012</a></li>
+              <li><a href="">December 2011</a></li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3">
+            <h3 class="title">
+              CONTACT US
+            </h3>
+            <ul class="list-contact-us">
+              <li class="d-flex align-item-center">
+                <i class="far fa-envelope"></i
+                ><span class="text">info@premiumcoding.com</span>
+              </li>
+              <li class="d-flex align-item-center">
+                <i class="fas fa-phone"></i
+                ><span class="text">800 756 156</span>
+              </li>
+              <li class="d-flex align-item-center">
+                <i class="fas fa-mobile-alt"></i>
+                <span class="text">+386408007561</span>
+              </li>
+            </ul>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3">
+            <h3 class="title">
+              SIGN TO NEWSLETTER
+            </h3>
+            <form action="" class="form-subcribe">
+              <input type="text" placeholder="Name" />
+              <input type="text" placeholder="Email" />
+              <button class="btn-subscribe">
+                subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <div class="copy-right-wrapper">
+      <div
+        class="container copy-right d-flex justify-content-center justify-content-sm-between align-items-center"
+      >
+        <ul class="lower-footer">
+          <li>
+            <a href="">Home</a>
+          </li>
+          <li><a href="">Portpolio</a></li>
+          <li><a href="">Sitemap</a></li>
+          <li><a href="">Contact</a></li>
+        </ul>
+        <span class="text-copy-right">
+          &copy; 2013 All Rights Reserved
+        </span>
+      </div>
+    </div>
+    <!-- END FOOTER -->
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -289,5 +410,6 @@
       integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
       crossorigin="anonymous"
     ></script>
+    <script src="./js//myscript.js"></script>
   </body>
 </html>

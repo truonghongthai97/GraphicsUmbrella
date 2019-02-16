@@ -1,0 +1,11 @@
+@mixin btn($padding, $text-transform: unset) {
+  background-color: #8eb63e;
+  border: none;
+  color: #ffffff;
+  font-size: 0.7rem;
+  padding: $padding;
+  text-transform: $text-transform;
+  &:hover {
+    cursor: pointer;
+  }
+}
